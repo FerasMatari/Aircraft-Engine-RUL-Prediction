@@ -68,6 +68,27 @@ The project examines regression performance using metrics such as:
 
 Detailed implementation and evaluation are available in the project notebook.
 
+
+## 📊 Experimental Results
+
+The following table summarizes the best-performing models identified for each evaluated NASA C-MAPSS subset.
+
+| Dataset | Best Model | MAE | RMSE |
+|---------|------------|-----|------|
+| FD002 | Ensemble (Average) | 14.36 | 18.62 |
+| FD003 | GRU + Attention | 7.18 | 11.85 |
+| FD004 | Ensemble (Average) | 10.51 | 17.44 |
+
+### Key Findings
+
+- GRU with Attention achieved an RMSE of 11.85 on FD003.
+- The averaging ensemble achieved an RMSE of 17.44 on FD004.
+- The averaging ensemble achieved an RMSE of 18.62 on FD002.
+- Results demonstrate the application of deep learning and ensemble approaches to aircraft engine RUL prediction.
+
+**Note:** Results are reported from the saved notebook outputs. Performance comparisons across different subsets should be interpreted carefully.
+
+
 ## 📂 Repository Contents
 
 - `README.md` — Project documentation
